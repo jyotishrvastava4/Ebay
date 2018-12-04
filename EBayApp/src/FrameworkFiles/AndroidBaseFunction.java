@@ -11,26 +11,11 @@ import io.appium.java_client.touch.offset.PointOption;
 
 public class AndroidBaseFunction {
 	
- public static AndroidElement AndroidFindElementByID(AndroidDriver<AndroidElement> driver,String sElementID)
+ public static AndroidElement AndroidFindElement(AndroidDriver<AndroidElement> driver,By sElementID)
  {
 	 //Find Element by ID
-	 System.out.println("Finding Element by ID: "+sElementID);
-	 return driver.findElement(By.id(sElementID));
- }
- 
- public static AndroidElement AndroidFindElementByXpath(AndroidDriver<AndroidElement> driver,String Xpath)
- {
-	//Find Element by Xpath
-	 System.out.println("Finding Element by Xpath: "+Xpath);
-	 return driver.findElement(By.xpath(Xpath));
- }
- 
- 
- public static AndroidElement AndroidFindElementByText(AndroidDriver<AndroidElement> driver,String Text)
- {
-	//Find Element by Text
-	 System.out.println("Finding Element by ID: "+Text);
-	 return driver.findElementByName(Text);
+	 System.out.println("Finding Element by Locator- "+sElementID);
+	 return driver.findElement(sElementID);
  }
  
  public static void WaitUntilElementVisible(AndroidDriver<AndroidElement> driver,By By)
@@ -39,6 +24,14 @@ public class AndroidBaseFunction {
 	 WebDriverWait wait = new WebDriverWait(driver,10);
 	 wait.until(ExpectedConditions.visibilityOfElementLocated(By));
 	 System.out.println("Wait till element visible: Locator-"+By);
+ }
+ 
+ public static void WaitUntilElementPresent(AndroidDriver<AndroidElement> driver,By By)
+ {
+	 //Wait for max 10 second till element present 
+	 WebDriverWait wait = new WebDriverWait(driver,10);
+	 wait.until(ExpectedConditions.presenceOfElementLocated(By));
+	 System.out.println("Wait till element Present: Locator-"+By);
  }
  
 }

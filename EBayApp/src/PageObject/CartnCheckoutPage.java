@@ -10,18 +10,21 @@ import io.appium.java_client.touch.offset.PointOption;
 import junit.framework.Assert;
 
 public class CartnCheckoutPage extends AndroidBaseFunction {
-    public String confirmnPay="purchase_link";
-    
+    public By confirmnPay=By.id("purchase_link");
+	public By cart_page = By.id("com.ebay.mobile:id/toolbar_centered_title");
+
 	public void ClickOnCheckout(AndroidDriver<AndroidElement> driver){
-	TouchAction Action= new TouchAction(driver);
-	Action.tap(PointOption.point(505, 1901)).perform();
+		WaitUntilElementVisible(driver, cart_page); 
+		TouchAction Action= new TouchAction(driver);
+	    Action.tap(PointOption.point(505, 1901)).perform();
 	}
 	
 	
 	public void VerifyConfirmAndPaybtn(AndroidDriver<AndroidElement> driver){
+		WaitUntilElementPresent(driver,confirmnPay);
 		try
 		{
-			boolean bConfirmAndPaybtn = AndroidFindElementByID(driver, confirmnPay).isEnabled();
+			boolean bConfirmAndPaybtn = AndroidFindElement(driver, confirmnPay).isEnabled();
 			if (bConfirmAndPaybtn == false)
 			{
 				System.out.println("'Confirm and Pay' button is disabled: Expected");

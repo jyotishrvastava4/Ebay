@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="41185" started-at="2018-12-04T10:03:50Z" finished-at="2018-12-04T10:04:31Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="41185" started-at="2018-12-04T10:03:50Z" finished-at="2018-12-04T10:04:31Z">
+      <class name="DriverScript.EBayAutomationTest">
+        <test-method status="PASS" signature="SetDesireCapibilities()[pri:0, instance:DriverScript.EBayAutomationTest@10090a4]" name="SetDesireCapibilities" is-config="true" duration-ms="33" started-at="2018-12-04T15:33:50Z" finished-at="2018-12-04T15:33:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetDesireCapibilities -->
+        <test-method status="PASS" signature="main()[pri:0, instance:DriverScript.EBayAutomationTest@10090a4]" name="main" duration-ms="41117" started-at="2018-12-04T15:33:50Z" finished-at="2018-12-04T15:34:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+      </class> <!-- DriverScript.EBayAutomationTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

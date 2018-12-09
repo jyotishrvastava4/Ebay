@@ -1,5 +1,7 @@
 package FrameworkFiles;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -17,6 +19,15 @@ public class AndroidBaseFunction {
 	 System.out.println("Finding Element by Locator- "+sElementID);
 	 return driver.findElement(sElementID);
  }
+ 
+ public static List<AndroidElement> AndroidFindElements(AndroidDriver<AndroidElement> driver,By sElementID)
+ {
+	 //Find Element by ID
+	 System.out.println("Finding Element by Locator- "+sElementID);
+	 List<AndroidElement> FindElements= driver.findElements(sElementID);
+	return FindElements;
+ }
+ 
  
  public static void WaitUntilElementVisible(AndroidDriver<AndroidElement> driver,By By)
  {

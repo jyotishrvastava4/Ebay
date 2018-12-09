@@ -27,9 +27,9 @@ public class ReadFromExcel {
 			
 			 //String p[][]=new String[sSheet.getColumns()][ sSheet.getRows()];
 			  for (int i=0;i<=(sSheet.getRows()-1);i++){
-				  System.out.println("Rows:" +sSheet.getRows());
+				  //System.out.println("Rows:" +sSheet.getRows());
 				  for (int j=0;j<=(sSheet.getColumns()-1);j++){
-					  System.out.println("Column:" +sSheet.getColumns());
+					 // System.out.println("Column:" +sSheet.getColumns());
 					  // p[i][j]=sSheet.getCell(j, i).getContents();
 					  
 					  System.out.println(i+" "+j+" "+sSheet.getCell(j, i).getContents());

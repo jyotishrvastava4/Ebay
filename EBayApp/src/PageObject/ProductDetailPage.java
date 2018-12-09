@@ -10,6 +10,7 @@ public class ProductDetailPage extends AndroidBaseFunction {
 
 	public By Cartbtn=By.id("button_add_to_cart");
 	public By ViewCartbtn=By.id("button_view_in_cart");
+	public By estimatedDate = By.id("estimated_delivery_textview");
 	
 	public void ClickToCart(AndroidDriver<AndroidElement> driver)
 		{
@@ -23,6 +24,16 @@ public class ProductDetailPage extends AndroidBaseFunction {
 		WaitUntilElementVisible(driver, ViewCartbtn); 
 		AndroidElement viewInCart = AndroidFindElement(driver, ViewCartbtn);
 		viewInCart.click();
+	}
+	
+	public void EstimatedDate (AndroidDriver<AndroidElement> driver)
+	{
+		//WaitUntilElementVisible(driver, ViewCartbtn);
+		AndroidElement estimatedDelivery = AndroidFindElement(driver, estimatedDate);
+		if(estimatedDelivery.isDisplayed())
+		{
+			System.out.println("Estimated Delivery date is : " + estimatedDelivery.getText());
+		}
 	}
 }
 

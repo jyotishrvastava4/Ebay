@@ -5,8 +5,10 @@
     <classes>
       <class name="DriverScript.EBayAutomationTest">
         <methods>
-          <include name="main"/>
+          <include name="Find_product"/>
+          <include name="Find_EstimatedDate"/>
           <include name="SetDesireCapibilities"/>
+          <include name="AddProductToCart"/>
         </methods>
       </class> <!-- DriverScript.EBayAutomationTest -->
     </classes>

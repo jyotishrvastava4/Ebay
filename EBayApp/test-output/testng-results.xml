@@ -1,113 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="3" failed="0" total="3" passed="0">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="601176" started-at="2018-12-09T12:21:58Z" finished-at="2018-12-09T12:31:59Z">
+  <suite name="Default suite" duration-ms="45998" started-at="2018-12-10T02:49:28Z" finished-at="2018-12-10T02:50:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="601176" started-at="2018-12-09T12:21:58Z" finished-at="2018-12-09T12:31:59Z">
+    <test name="Default test" duration-ms="45998" started-at="2018-12-10T02:49:28Z" finished-at="2018-12-10T02:50:14Z">
       <class name="DriverScript.EBayAutomationTest">
-        <test-method status="FAIL" signature="SetDesireCapibilities()[pri:0, instance:DriverScript.EBayAutomationTest@1ec1f0c]" name="SetDesireCapibilities" is-config="true" duration-ms="0" started-at="2018-12-09T17:51:58Z" finished-at="2018-12-09T17:51:58Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:32:14.902Z'
-System info: host: 'DESKTOP-EGETJ03', ip: '192.168.43.13', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_60'
-Driver info: driver.version: AndroidDriver]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:32:14.902Z'
-System info: host: 'DESKTOP-EGETJ03', ip: '192.168.43.13', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_60'
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:195)
-	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:209)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
-	at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:38)
-	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:84)
-	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:94)
-	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:93)
-	at DriverScript.EBayAutomationTest.SetDesireCapibilities(EBayAutomationTest.java:48)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:216)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:143)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:656)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
-	at org.testng.TestNG.runSuites(TestNG.java:1075)
-	at org.testng.TestNG.run(TestNG.java:1047)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-Caused by: java.lang.reflect.InvocationTargetException
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:185)
-	... 36 more
-Caused by: java.io.IOException: unexpected end of stream on Connection{127.0.0.1:4723, proxy=DIRECT hostAddress=/127.0.0.1:4723 cipherSuite=none protocol=http/1.1}
-	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:208)
-	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:105)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
-	... 41 more
-Caused by: java.io.EOFException: \n not found: limit=0 content=…
-	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:237)
-	at okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:215)
-	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
-	... 58 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method status="PASS" signature="SetDesireCapibilities()[pri:0, instance:DriverScript.EBayAutomationTest@d56d67]" name="SetDesireCapibilities" is-config="true" duration-ms="12054" started-at="2018-12-10T08:19:28Z" finished-at="2018-12-10T08:19:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetDesireCapibilities -->
-        <test-method status="SKIP" signature="Find_product()[pri:1, instance:DriverScript.EBayAutomationTest@1ec1f0c]" name="Find_product" duration-ms="3" started-at="2018-12-09T18:01:59Z" finished-at="2018-12-09T18:01:59Z">
+        <test-method status="PASS" signature="Find_product()[pri:1, instance:DriverScript.EBayAutomationTest@d56d67]" name="Find_product" duration-ms="14888" started-at="2018-12-10T08:19:40Z" finished-at="2018-12-10T08:19:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Find_product -->
-        <test-method status="SKIP" signature="Find_EstimatedDate()[pri:2, instance:DriverScript.EBayAutomationTest@1ec1f0c]" name="Find_EstimatedDate" duration-ms="1" started-at="2018-12-09T18:01:59Z" finished-at="2018-12-09T18:01:59Z">
+        <test-method status="PASS" signature="Find_EstimatedDate()[pri:2, instance:DriverScript.EBayAutomationTest@d56d67]" name="Find_EstimatedDate" duration-ms="3611" started-at="2018-12-10T08:19:55Z" finished-at="2018-12-10T08:19:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Find_EstimatedDate -->
-        <test-method status="SKIP" signature="AddProductToCart()[pri:3, instance:DriverScript.EBayAutomationTest@1ec1f0c]" name="AddProductToCart" duration-ms="1" started-at="2018-12-09T18:01:59Z" finished-at="2018-12-09T18:01:59Z">
+        <test-method status="PASS" signature="AddProductToCart()[pri:3, instance:DriverScript.EBayAutomationTest@d56d67]" name="AddProductToCart" duration-ms="13758" started-at="2018-12-10T08:19:59Z" finished-at="2018-12-10T08:20:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddProductToCart -->
-        <test-method status="SKIP" signature="CloseDriver()[pri:0, instance:DriverScript.EBayAutomationTest@1ec1f0c]" name="CloseDriver" is-config="true" duration-ms="0" started-at="2018-12-09T18:01:59Z" finished-at="2018-12-09T18:01:59Z">
+        <test-method status="PASS" signature="CloseDriver()[pri:0, instance:DriverScript.EBayAutomationTest@d56d67]" name="CloseDriver" is-config="true" duration-ms="1647" started-at="2018-12-10T08:20:12Z" finished-at="2018-12-10T08:20:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseDriver -->

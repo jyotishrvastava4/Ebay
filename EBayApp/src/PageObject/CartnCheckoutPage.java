@@ -1,13 +1,14 @@
 package PageObject;
 
 import org.openqa.selenium.By;
+import org.testng.Assert;
 
 import FrameworkFiles.AndroidBaseFunction;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.touch.offset.PointOption;
-import junit.framework.Assert;
+
 
 public class CartnCheckoutPage extends AndroidBaseFunction {
     public By confirmnPay=By.id("purchase_link");
@@ -27,11 +28,11 @@ public class CartnCheckoutPage extends AndroidBaseFunction {
 			boolean bConfirmAndPaybtn = AndroidFindElement(driver, confirmnPay).isEnabled();
 			if (bConfirmAndPaybtn == false)
 			{
-				System.out.println("'Confirm and Pay' button is disabled: Expected");
+				Assert.assertTrue(true, "'Confirm and Pay' button is disabled: Expected");
 			}
 			else
 			{
-				System.out.println("'Confirm and Pay' button is enabled: Not Expected");
+				Assert.assertTrue(true, "'Confirm and Pay' button is enabled: Not Expected");
 			}
 		}
 		catch(Exception e)

@@ -46,7 +46,7 @@ public class EBayAutomationTest {
 		//DesiredCapabilities _capibility = SetDesireCapibilities();
 		URL AppiumServerUrl = new URL(sAppiumURL);
 		_driver = new AndroidDriver<AndroidElement>(AppiumServerUrl,cap);
-		System.out.println("Driver Launched");
+		//System.out.println("Driver Launched");
 	}
 	
 	@Test(priority=1)
@@ -84,6 +84,6 @@ public class EBayAutomationTest {
 	public void CloseDriver()
 	{
 		_driver.quit();
-		System.out.println("Driver successfully closed");
+		//System.out.println("Driver successfully closed");
 	}
 }

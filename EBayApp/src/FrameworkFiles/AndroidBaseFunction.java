@@ -16,7 +16,7 @@ public class AndroidBaseFunction {
  public static AndroidElement AndroidFindElement(AndroidDriver<AndroidElement> driver,By sElementID)
  {
 	 //Find Element by ID
-	 System.out.println("Finding Element by Locator- "+sElementID);
+	 //System.out.println("Finding Element by Locator- "+sElementID);
 	 return driver.findElement(sElementID);
  }
  
@@ -34,7 +34,7 @@ public class AndroidBaseFunction {
 	 //Wait for max 10 second till element visible 
 	 WebDriverWait wait = new WebDriverWait(driver,10);
 	 wait.until(ExpectedConditions.visibilityOfElementLocated(By));
-	 System.out.println("Wait till element visible: Locator-"+By);
+	 //System.out.println("Wait till element visible: Locator-"+By);
  }
  
  public static void WaitUntilElementPresent(AndroidDriver<AndroidElement> driver,By By)
@@ -42,7 +42,7 @@ public class AndroidBaseFunction {
 	 //Wait for max 10 second till element present 
 	 WebDriverWait wait = new WebDriverWait(driver,10);
 	 wait.until(ExpectedConditions.presenceOfElementLocated(By));
-	 System.out.println("Wait till element Present: Locator-"+By);
+	 //System.out.println("Wait till element Present: Locator-"+By);
  }
  
 }

@@ -1,6 +1,7 @@
 package PageObject;
 
 import org.openqa.selenium.By;
+import org.testng.Assert;
 
 import FrameworkFiles.AndroidBaseFunction;
 import io.appium.java_client.android.AndroidDriver;
@@ -28,11 +29,11 @@ public class ProductDetailPage extends AndroidBaseFunction {
 	
 	public void EstimatedDate (AndroidDriver<AndroidElement> driver)
 	{
-		//WaitUntilElementVisible(driver, ViewCartbtn);
+		WaitUntilElementVisible(driver, Cartbtn);
 		AndroidElement estimatedDelivery = AndroidFindElement(driver, estimatedDate);
 		if(estimatedDelivery.isDisplayed())
 		{
-			System.out.println("Estimated Delivery date is : " + estimatedDelivery.getText());
+			Assert.assertTrue(true, "Estimated Delivery date is : " + estimatedDelivery.getText());
 		}
 	}
 }

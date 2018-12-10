@@ -9,6 +9,7 @@
           <include name="Find_EstimatedDate"/>
           <include name="SetDesireCapibilities"/>
           <include name="AddProductToCart"/>
+          <include name="CloseDriver"/>
         </methods>
       </class> <!-- DriverScript.EBayAutomationTest -->
     </classes>

@@ -3,11 +3,14 @@ package PageObject;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.testng.Assert;
+
 import FrameworkFiles.AndroidBaseFunction;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.touch.offset.PointOption;
+//import junit.framework.Assert;
 
 public class SearchProductPage extends AndroidBaseFunction {
 	public By searchBox = By.id("com.ebay.mobile:id/search_box");
@@ -46,10 +49,8 @@ public class SearchProductPage extends AndroidBaseFunction {
 		List<AndroidElement> P1 = driver.findElements(productName);
 		for (int i=0;i<P1.size();i++){
 			String sProduct =P1.get(i).getAttribute("text");
-			System.out.println(sProduct);
-
 			if (sProduct.contains("Bose QC35 II Quiet") ) {
-				System.out.println("Product Exist");
+				Assert.assertTrue(true,"Product is present in search list");
 				break;
 			}
 		}
